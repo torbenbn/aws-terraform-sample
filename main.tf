@@ -5,6 +5,11 @@ terraform {
       source  = "hashicorp/aws"
     }
   }
+  backend "s3" {
+    bucket = "terraform-state-390458"
+    key = "github/torbenbn/aws-terraform-sample.tfstate"
+    region = "ap-southeast-2"
+  }
 }
 
 data "aws_s3_bucket" "selected" {
