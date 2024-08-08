@@ -7,7 +7,7 @@ terraform {
   }
   backend "s3" {
     bucket = "terraform-state-390458"
-    key = "github/torbenbn/aws-terraform-sample.tfstate"
+    key    = "github/torbenbn/aws-terraform-sample.tfstate"
     region = "ap-southeast-2"
   }
 }
